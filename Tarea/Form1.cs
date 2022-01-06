@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Tarea
@@ -17,11 +10,27 @@ namespace Tarea
             InitializeComponent();
         }
 
+
+        //Calcular Sueldo
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sueldos sueldo = new Sueldos();
+            sueldo.MdiParent = this;
+            sueldo.Show();
+        }
+
+        // Registro empleados 
+        private void calcularSueldoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Empleados f = new Empleados();
             f.MdiParent = this;
             f.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+        }
+        
     }
 }

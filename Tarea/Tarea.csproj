@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="calcular_sueldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calcular_sueldo.Designer.cs">
+      <DependentUpon>calcular_sueldo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sueldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sueldos.Designer.cs">
+      <DependentUpon>Sueldos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="calcular_sueldo.resx">
+      <DependentUpon>calcular_sueldo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +91,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sueldos.resx">
+      <DependentUpon>Sueldos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

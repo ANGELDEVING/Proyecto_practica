@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Tarea
@@ -28,24 +21,34 @@ namespace Tarea
         }
 
 
-        // >>>==> [ btn_Close Form ] <== <<<//
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // >>>==> [ btn_Close Form ] <== <<<//
+
             this.Close();
         }
 
 
-        // === [ Add to dta_Datos ] === //
+
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            // calculando 
+            // === [ Add to dta_Datos ] === //
 
-            dta_Datos.Rows.Add(txt_numero_empleados.Text, txt_sueldo.Text);
+            dta_Datos.Rows.Add(txt_numero_empleados.Text, txt_sueldo.Text, txt_empleado.Text, txt_curp.Text, txt_rfc.Text);
             txt_sueldo.Text = " ";
             txt_numero_empleados.Text = " ";
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
